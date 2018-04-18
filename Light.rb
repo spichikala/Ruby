@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'selenium-webdriver'
-module Test
-    Class OutputText
+
         def Dependency
             # Start an instance of Chrome browser
             driver = Selenium::WebDriver.for :chrome
@@ -39,8 +38,6 @@ module Test
             driver.find_element(:css,'._w0d[action="https://www.facebook.com/logout.php"]').click
             driver.quit
         end
-    end
-end
 
 
 
