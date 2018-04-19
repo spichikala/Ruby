@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'selenium-webdriver'
 
-  def get_Values
+  def get_values
     # Start an instance of Chrome browser
     driver = Selenium::WebDriver.for :chrome
     # Go to rubygems.org url
@@ -21,7 +21,7 @@ require 'selenium-webdriver'
   end
 
 
-  def Post_Facebook
+  def post_facebook
     # Start an instance of Chrome browser
     driver = Selenium::WebDriver.for :chrome
     # Go to facebook.com url
