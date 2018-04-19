@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'selenium-webdriver'
 
-  def Dependency
+  def get_Values
     # Start an instance of Chrome browser
     driver = Selenium::WebDriver.for :chrome
     # Go to rubygems.org url
@@ -26,7 +26,6 @@ require 'selenium-webdriver'
     driver = Selenium::WebDriver.for :chrome
     # Go to facebook.com url
     driver.navigate.to 'https://www.facebook.com'
-    driver.find_element(:xpath,'//input[@id="home_query"]').send_keys('ruby-debug19\n')
     driver.find_element(:xpath,'//input[@id="email"]').clear.send_keys('test')
     driver.find_element(:xpath,'//input[@id="pass"]').clear.send_keys('test')
     driver.find_element(:xpath,'//label[@id="loginbutton"]').click
